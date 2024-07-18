@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+.blue {
+    color: #4a90e2;
+}
+
+nav {
+    color: #888;
+    font-size: 0.9em;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #4a90e2;
+    margin-top: 0;
+}
+
+.offer-box {
+    background-color: #fff9e6;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+}
+
+.timer img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.countdown {
+    font-weight: bold;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+}
+
+.get-off {
+    background-color: #ffc107;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.code {
+    color: #6c757d;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.order-section {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #f8f9fa;
+}
+
+.saved {
+    color: green;
+}
+
+.remove-link {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.satisfaction-guarantee, .why-choose {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.satisfaction-guarantee h4, .why-choose h4 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .offer-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timer {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .countdown {
+        margin-bottom: 10px;
+    }
+    
+    .discount {
+        flex-direction: column;
+    }
+    
+    .get-off {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .order-table, .order-table tbody, .order-table tr, .order-table td {
+        display: block;
+    }
+    
+    .order-table thead {
+        display: none;
+    }
+    
+    .order-table td {
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    .order-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+}
